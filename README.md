@@ -11,8 +11,7 @@ Converts your hex or RGB values into Corona-compatible format
 local color = require("convertcolor")
 ```
 
-3. Use it..
-..to convert from hex:
+3. Use it to convert from hex:
 ```lua
 color.hex('ff00ff') --change ff00ff to your color
 ```
