@@ -1,5 +1,5 @@
-# CoronaSDK-RGB-percentage
-Converts your hex or RGB values into Corona-compatible format
+# CoronaSDK RGB Percentage
+Converts your hex or RGB values into Corona-compatible format (numbers from 0 to 1)
 
 
 
