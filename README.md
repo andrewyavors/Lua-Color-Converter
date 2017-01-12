@@ -13,20 +13,25 @@ local color = require("convertcolor")
 
 3. Use it to convert from hex:
 ```lua
-color.hex('ff00ff') --change ff00ff to your color
+color.hex("ff00ff") --change ff00ff to your color
 ```
 .. and to convert from regular rgb:
 ```lua
 color.rgb(255, 0, 255) --change 255, 0, 255 to your red, green, blue channels respectively
 ```
+You can use one more argument to set alpha channel:
+```lua
+color.hex("ff00ff", 0.5) --alpha set to 50%
+color.rgb(255, 0, 255, 75) --alpha set to 75%
+```
 
 ### Examples:
 ```lua
 local myText = display.newText( "example from Corona Docs", 0, 0, native.systemFontBold, 12 )
-myText:setFillColor( color.hex('ff10ae') )
+myText:setFillColor( color.hex("ff10ae") )
 ```
 
 ```lua
-go.set("#label", "color", vmath.vector4(color.rgb(255, 16, 174), 1)
+go.set("#label", "color", vmath.vector4(color.rgb(255, 16, 174, 1))
 ```
 
