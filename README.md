@@ -1,5 +1,5 @@
-# Corona SDK Color Converter
-Converts your hex or RGB values into Corona-compatible format (numbers from 0 to 1)
+# Lua Color Converter
+Converts your hex or RGB values into Corona/Defold-compatible format (numbers from 0 to 1)
 
 
 
