@@ -27,7 +27,6 @@ myText:setFillColor( color.hex('ff10ae') )
 ```
 
 ```lua
-local myRect= display.newRect( 0, 0, 100, 100 )
-myRect:setFillColor( color.rgb(255, 16, 174) )
+go.set("#label", "color", vmath.vector4(color.rgb(255, 16, 174, 1))
 ```
 
