@@ -1,13 +1,13 @@
 local M = {}
 
 local function hex (hex, alpha) 
-	local redColor,greenColor,blueColor=hex:match('(.)(..)(..)(..)')
+	local redColor,greenColor,blueColor=hex:match('#?(..)(..)(..)')
 	redColor, greenColor, blueColor = tonumber(redColor, 16)/255, tonumber(greenColor, 16)/255, tonumber(blueColor, 16)/255
 	redColor, greenColor, blueColor = math.floor(redColor*100)/100, math.floor(greenColor*100)/100, math.floor(blueColor*100)/100
 	if alpha == nil then
 		return redColor, greenColor, blueColor
 	end
-	return redColor, greenColor, blueColor, alpha
+	return redColor, greenColor, blueColor, alpha or 1
 end
 
 local function rgb (r, g, b)
